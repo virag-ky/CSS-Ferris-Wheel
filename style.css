@@ -9,7 +9,7 @@ body {
   max-width: 500px;
   max-height: 500px;
   position: absolute;
-  margin-left: 200px;
+  margin-left: 50px;
   margin-top: 50px;
   animation-name: wheel;
   animation-duration: 10s;
@@ -47,6 +47,11 @@ body {
   position: absolute;
   top: 6%;
   left: 10%;
+  transform-origin: 50% 0%;
+  animation-name: cabins;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 .cabin1 {
   top: 6%;
@@ -73,5 +78,21 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes cabins {
+  0% {
+    transform: rotate(0deg);
+    background: linear-gradient(45deg, deeppink, lime);
+  }
+  25% {
+    background: linear-gradient(45deg, lime, aqua);
+  }
+  75% {
+    background: linear-gradient(45deg, aqua, violet);
+  }
+  100% {
+    transform: rotate(-360deg);
+    background: linear-gradient(45deg, violet, deeppink);
   }
 }
