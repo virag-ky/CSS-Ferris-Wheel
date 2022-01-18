@@ -8,5 +8,58 @@ body {
   height: 60vw;
   max-width: 500px;
   max-height: 500px;
-  margin: 20px auto;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.line {
+  width: 50%;
+  height: 5px;
+  background-color: aquamarine;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 0%;
+}
+.line:nth-of-type(2) {
+  transform: rotate(60deg);
+}
+.line:nth-of-type(3) {
+  transform: rotate(120deg);
+}
+.line:nth-of-type(4) {
+  transform: rotate(180deg);
+}
+.line:nth-of-type(5) {
+  transform: rotate(240deg);
+}
+.line:nth-of-type(6) {
+  transform: rotate(300deg);
+}
+.cabin {
+  width: 20%;
+  height: 20%;
+  background-color: white;
+  position: absolute;
+  top: 6%;
+  left: 10%;
+}
+.cabin1 {
+  top: 6%;
+  left: 65%;
+}
+.cabin2 {
+  top: 50%;
+  left: 85%;
+}
+.cabin3 {
+  top: 50%;
+  left: -5%;
+}
+.cabin4 {
+  top: 90%;
+}
+.cabin5 {
+  top: 90%;
+  left: 65%;
 }
