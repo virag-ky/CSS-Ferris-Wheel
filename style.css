@@ -1,0 +1,12 @@
+body {
+  background-color: black;
+}
+.wheel {
+  border: 5px solid aquamarine;
+  border-radius: 50%;
+  width: 60vw;
+  height: 60vw;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 20px auto;
+}
