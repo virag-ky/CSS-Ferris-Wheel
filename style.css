@@ -11,6 +11,10 @@ body {
   position: absolute;
   margin-left: 200px;
   margin-top: 50px;
+  animation-name: wheel;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 .line {
   width: 50%;
@@ -62,4 +66,12 @@ body {
 .cabin5 {
   top: 90%;
   left: 65%;
+}
+@keyframes wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
